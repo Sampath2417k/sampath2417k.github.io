@@ -1,10 +1,310 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sampath Kumar - Portfolio</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #ddd;
+      font-family: monospace;
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #a78bfa;
+      font-size: 2em;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      color: #a78bfa;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    p {
+      line-height: 1.7;
+      color: #bbb;
+    }
+
+    a {
+      color: #a78bfa;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+
+    nav {
+      margin-bottom: 40px;
+      padding: 10px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .intro-tag {
+      font-size: 0.85em;
+      color: #888;
+      margin-bottom: 15px;
+    }
+
+    .tagline {
+      font-size: 1em;
+      color: #999;
+      margin-bottom: 30px;
+    }
+
+    .skill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0;
+      list-style: none;
+      margin-top: 10px;
+    }
+
+    .skill-list li {
+      background: #1e1e1e;
+      border: 1px solid #333;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 0.82em;
+      color: #aaa;
+    }
+
+    .cert-item {
+      background: #1a1a1a;
+      border-left: 3px solid #a78bfa;
+      padding: 12px 15px;
+      margin-bottom: 12px;
+      border-radius: 0 6px 6px 0;
+    }
+
+    .cert-item .cert-name {
+      font-weight: bold;
+      color: #ddd;
+      font-size: 0.95em;
+    }
+
+    .cert-item .cert-org {
+      font-size: 0.8em;
+      color: #777;
+      margin-top: 3px;
+    }
+
+    .project-item {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      padding: 15px;
+      margin-bottom: 12px;
+      border-radius: 6px;
+    }
+
+    .project-item:hover {
+      border-color: #a78bfa;
+    }
+
+    .project-item .proj-title {
+      font-weight: bold;
+      color: #ddd;
+      margin-bottom: 6px;
+    }
+
+    .project-item .proj-desc {
+      font-size: 0.85em;
+      color: #888;
+      line-height: 1.6;
+    }
+
+    .project-item .proj-tags {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .project-item .proj-tags span {
+      font-size: 0.75em;
+      background: #252525;
+      color: #a78bfa;
+      padding: 2px 8px;
+      border-radius: 3px;
+    }
+
+    .contact-line {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid #222;
+      font-size: 0.9em;
+    }
+
+    .contact-line:last-child {
+      border-bottom: none;
+    }
+
+    .contact-line span {
+      color: #666;
+      min-width: 80px;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #222;
+      font-size: 0.78em;
+      color: #555;
+      text-align: center;
+    }
+
+    .highlight {
+      color: #a78bfa;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello! I am Sampath</h1>
-  <p>This is my first website. Just getting started!</p>
+
+  <nav>
+    <a href="#about">about</a>
+    <a href="#skills">skills</a>
+    <a href="#certs">certs</a>
+    <a href="#projects">projects</a>
+    <a href="#contact">contact</a>
+  </nav>
+
+  <div class="intro-tag">// hello there 👋</div>
+  <h1>P. Sampath Kumar</h1>
+  <p class="tagline">friends call me <span class="highlight">Shyam</span> &nbsp;·&nbsp; final year EEE student &nbsp;·&nbsp; CIET, Guntur</p>
+  <p>I'm a B.Tech student who likes breaking and fixing things — mostly phones. I flash custom ROMs, mess with root setups, and use as much open source software as possible. Currently figuring out the rest.</p>
+
+  <h2 id="about">// about me</h2>
+  <p>
+    Studying Electronics and Electrical Engineering at Chalapathi Institute of Engineering and Technology, Andhra Pradesh.
+    I got into Android modding a while back and haven't stopped since. I run custom ROMs on both my phones and I genuinely enjoy
+    reading through XDA threads and Telegram groups to figure stuff out.
+  </p>
+  <p style="margin-top: 12px;">
+    Outside of college stuff I like exploring FOSS tools, tinkering with my PC, and occasionally building random things on the web like this page.
+  </p>
+
+  <h2 id="skills">// skills &amp; interests</h2>
+  <ul class="skill-list">
+    <li>Android Modding</li>
+    <li>Custom ROMs</li>
+    <li>KernelSU / Magisk</li>
+    <li>Linux &amp; Termux</li>
+    <li>Python (basics)</li>
+    <li>HTML &amp; CSS</li>
+    <li>Git &amp; GitHub</li>
+    <li>FOSS everything</li>
+    <li>Smart Grid</li>
+    <li>Renewable Energy</li>
+    <li>Cloud Computing</li>
+    <li>AI basics</li>
+  </ul>
+
+  <h2 id="certs">// certifications</h2>
+
+  <div class="cert-item">
+    <div class="cert-name">Cloud Computing</div>
+    <div class="cert-org">NPTEL — IIT Kharagpur &nbsp;·&nbsp; ✓ verified</div>
+  </div>
+
+  <div class="cert-item">
+    <div class="cert-name">Artificial Intelligence: Concepts &amp; Techniques</div>
+    <div class="cert-org">NPTEL &nbsp;·&nbsp; ✓ verified</div>
+  </div>
+
+  <div class="cert-item">
+    <div class="cert-name">Smart Grid</div>
+    <div class="cert-org">NPTEL &nbsp;·&nbsp; ✓ verified</div>
+  </div>
+
+  <div class="cert-item">
+    <div class="cert-name">Industry Certification</div>
+    <div class="cert-org">AICT EduSkills &nbsp;·&nbsp; ✓ completed</div>
+  </div>
+
+  <h2 id="projects">// projects &amp; stuff i've done</h2>
+
+  <div class="project-item">
+    <div class="proj-title">POCO F1 — Project Infinity X ROM</div>
+    <div class="proj-desc">
+      Running Android 16 on a POCO F1 (Beryllium) with KernelSU Next and JiroZen kernel.
+      Got Play Integrity passing at DEVICE level and payment apps like PhonePe and Paytm working
+      on a fully rooted setup using TrickyStore + Shamiko + HideMyAppList.
+    </div>
+    <div class="proj-tags">
+      <span>Android</span><span>KernelSU</span><span>Custom ROM</span><span>Play Integrity</span>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="proj-title">Samsung A52s — KernelSU Next</div>
+    <div class="proj-desc">
+      Set up KernelSU Next on SM-A528B via boot.img patching with TWRP. Running UN1CA custom ROM
+      with per-app device spoofing for games.
+    </div>
+    <div class="proj-tags">
+      <span>Samsung</span><span>TWRP</span><span>KernelSU</span><span>Odin</span>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="proj-title">Neocities website — work in progress</div>
+    <div class="proj-desc">
+      Learning web stuff by building a personal site on Neocities. Very much a work in progress but that's the point.
+      <br><br>
+      <a href="https://syam1071.neocities.org/" target="_blank">syam1071.neocities.org →</a>
+    </div>
+    <div class="proj-tags">
+      <span>HTML</span><span>CSS</span><span>Neocities</span>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="proj-title">This portfolio</div>
+    <div class="proj-desc">
+      Made this myself. Pure HTML and CSS, no frameworks. Hosted on GitHub Pages.
+    </div>
+    <div class="proj-tags">
+      <span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+    </div>
+  </div>
+
+  <h2 id="contact">// contact</h2>
+
+  <div class="contact-line">
+    <span>email</span>
+    <a href="mailto:sampath2417k@gmail.com">sampath2417k@gmail.com</a>
+  </div>
+  <div class="contact-line">
+    <span>github</span>
+    <a href="https://github.com/Sampath2417k" target="_blank">github.com/Sampath2417k</a>
+  </div>
+  <div class="contact-line">
+    <span>instagram</span>
+    <a href="https://instagram.com/ig.sampath" target="_blank">@ig.sampath</a>
+  </div>
+  <div class="contact-line">
+    <span>neocities</span>
+    <a href="https://syam1071.neocities.org/" target="_blank">syam1071.neocities.org</a>
+  </div>
+
+  <footer>
+    made by sampath kumar &nbsp;·&nbsp; hosted on github pages &nbsp;·&nbsp; 2025
+  </footer>
+
 </body>
 </html>
